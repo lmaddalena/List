@@ -67,6 +67,33 @@ void *list_first(t_list *);
 // Get the last element of the list
 void *list_last(t_list *);
 ```
+### Examples
+Create the list:
+```C
+t_list *mylist = list_ctor();
+```
+
+Append some strings to the list:
+```C
+list_add(mylist, "Alfa");
+list_add(mylist, "Beta");
+list_add(mylist, "Gamma");
+```
+
+Using the iterator:
+```C
+char *item;
+t_iterator *iter = list_getiterator(mylist);       
+while ((item = (char*)list_getnext(iter)) != NULL)
+{
+    printf("%s\n", item);
+}
+```
+
+Destroy the list:
+```C
+list_dtor(mylist);
+```
 
 ## License
 
