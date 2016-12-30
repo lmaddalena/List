@@ -27,7 +27,7 @@ typedef struct iterator {
 ```
 ### API
 ```C
-' List costructor
+` List costructor
 ' Create the list
 t_list *list_ctor(void);
 
