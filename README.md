@@ -27,44 +27,44 @@ typedef struct iterator {
 ```
 ### API
 ```C
-` List costructor
-' Create the list
+// List costructor 
+// Create the list 
 t_list *list_ctor(void);
 
-' List distructor
-' Destroy the list and the contained items (free the memory)
+// List distructor
+// Destroy the list and the contained items (free the memory)
 void list_dtor(t_list *);
 
-' Add item
-' Add a generic item to the list
+// Add item
+// Add a generic item to the list
 void list_add(t_list *, void *);
 
-' Add integer
-' Add a integer to the list
+// Add integer
+// Add a integer to the list
 void list_addint(t_list *, int);
 
-' Get next
-' It allows to iterate the list. Each call retrieve the next item if exists, NULL otherwise
+// Get next
+// It allows to iterate the list. Each call retrieve the next item if exists, NULL otherwise
 void *list_getnext(t_iterator *);
 
-' Get iterator
-' Get the iterator for the specified list
+// Get iterator
+// Get the iterator for the specified list
 t_iterator *list_getiterator(t_list *);
 
-' Get size_t
-' Get the size of the list
+// Get size_t
+// Get the size of the list
 size_t list_getsize(t_list *list);
 
-' Get element at
-' Get the element at the specified position (0 based)
+// Get element at
+// Get the element at the specified position (0 based)
 void *list_getelementat(t_list *, int);
 
-' Fist
-' Get the first element of the list
+// First
+// Get the first element of the list
 void *list_first(t_list *);
 
-' Last
-' Get the last element of the list
+// Last
+// Get the last element of the list
 void *list_last(t_list *);
 ```
 
